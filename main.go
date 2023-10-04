@@ -121,7 +121,7 @@ func OpenSupport() {
 					Problem = problem
 
 					if !validateFields(name, email, problem, urgency) {
-						walk.MsgBox(mw, "Error", "All fields are required!", walk.MsgBoxIconError)
+						walk.MsgBox(mw, "Support Ticket", "Please fill out all fields!", walk.MsgBoxIconError)
 						return
 					}
 
