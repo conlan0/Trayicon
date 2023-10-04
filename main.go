@@ -153,8 +153,6 @@ func OpenSupport() {
 					content := fmt.Sprintf("<b>Name:</b> %s<br><b>Email:</b> %s<br><b>Problem:</b> %s<br><b>Urgency:</b> %s<br><b>Logged in user:</b> %s<br><b>Device:</b> %s", name, email, problem, urgency, loggedInUser, hostname)
 					TriggerEmail(subject, content)
 
-					log.Println("Attempting to show notification...")
-
 					mw.Close()
 				},
 			},
