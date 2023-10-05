@@ -198,7 +198,7 @@
             </q-td>
           </template>
 
-	  <template v-slot:body-cell-alert_type="props">
+	  <template v-slot:body-cell-alert_type="props"> //apply support-alert-class to the alert type text if its support
 	    <q-td :props="props">
 	      <div :class="{'support-alert-class': props.row.alert_type === 'support'}">{{ props.row.alert_type }}</div>
 	    </q-td>
@@ -221,7 +221,7 @@
   </q-dialog>
 </template>
 
-<style>
+<style> //added styling for the green bubble
   .support-alert-class {
     background-color: #4fbb4f;
     color: #fff;
