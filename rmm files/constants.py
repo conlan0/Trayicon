@@ -88,6 +88,7 @@ class AlertType(models.TextChoices):
     CHECK = "check", "Check"
     TASK = "task", "Task"
     CUSTOM = "custom", "Custom"
+    SUPPORT = "support", "Support"
 
 
 class AgentHistoryType(models.TextChoices):
