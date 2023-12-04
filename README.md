@@ -1,5 +1,5 @@
 # Trayicon
-In alerts.go you will need to replace your_api_key with a valid api key to your rmm. After that everything will compile and work as expected.
+In alerts.go you will need to replace your_api_key with a valid api key to your rmm and depending on if you recompiled your frontend with the changes you might need to change the alert_type in alerts.go from "support" to "custom". After that everything will compile and work as expected.
 
 What the program does:
 1. starts a system tray icon that has a submenu with a support item
