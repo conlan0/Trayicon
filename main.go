@@ -34,7 +34,7 @@ func onReady() {
 
 	systray.SetIcon(iconData)
 	systray.SetTitle("Support Tray")
-	systray.SetTooltip("Tactical RMM Support")
+	systray.SetTooltip("iScreenFix RMM Support")
 
 	menuSupport := systray.AddMenuItem("Support", "Request support")
 	menuSupport.SetTooltip("Support Ticket")
@@ -89,7 +89,7 @@ func OpenSupport() {
 		Background: SolidColorBrush{Color: walk.RGB(255, 255, 255)},
 		Children: []Widget{
 			Label{
-				Text: "Tactical RMM Support",
+				Text: "iScreenFix RMM Support",
 				Font: Font{
 					Bold:      true,
 					Family:    "Segoe UI",
@@ -152,6 +152,7 @@ func OpenSupport() {
 					subject := hostname + " has requested assistance"
 					content := fmt.Sprintf("<b>Name:</b> %s<br><b>Email:</b> %s<br><b>Problem:</b> %s<br><b>Urgency:</b> %s<br><b>Logged in user:</b> %s<br><b>Device:</b> %s", name, email, problem, urgency, loggedInUser, hostname)
 					TriggerEmail(subject, content)
+					TriggerSMS(name, email, problem, urgency, loggedInUser, hostname)
 
 					mw.Close()
 				},
