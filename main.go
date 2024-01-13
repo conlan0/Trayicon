@@ -34,7 +34,7 @@ func onReady() {
 
 	systray.SetIcon(iconData)
 	systray.SetTitle("Support Tray")
-	systray.SetTooltip("iScreenFix RMM Support")
+	systray.SetTooltip("Tactical RMM Support")
 
 	menuSupport := systray.AddMenuItem("Support", "Request support")
 	menuSupport.SetTooltip("Support Ticket")
@@ -89,7 +89,7 @@ func OpenSupport() {
 		Background: SolidColorBrush{Color: walk.RGB(255, 255, 255)},
 		Children: []Widget{
 			Label{
-				Text: "iScreenFix RMM Support",
+				Text: "Tactical RMM Support",
 				Font: Font{
 					Bold:      true,
 					Family:    "Segoe UI",
