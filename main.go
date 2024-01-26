@@ -137,7 +137,6 @@ func OpenSupport() {
 						hostname = "UnknownDevice"
 					}
 
-					SendAlert()
 					makeToast()
 
 					currentUser, err := user.Current()
@@ -148,11 +147,6 @@ func OpenSupport() {
 
 					ticket := fmt.Sprintf("Received ticket from %s (%s): %s - Urgency: %s", name, email, problem, urgency)
 					log.Println(ticket)
-
-					subject := hostname + " has requested assistance"
-					content := fmt.Sprintf("<b>Name:</b> %s<br><b>Email:</b> %s<br><b>Problem:</b> %s<br><b>Urgency:</b> %s<br><b>Logged in user:</b> %s<br><b>Device:</b> %s", name, email, problem, urgency, loggedInUser, hostname)
-					TriggerEmail(subject, content)
-					TriggerSMS(name, email, problem, urgency, loggedInUser, hostname)
 
 					mw.Close()
 				},
