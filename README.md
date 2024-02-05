@@ -16,3 +16,6 @@ I have also made small additions to the api and frontend of the rmm. This just i
 
 # Compile Command
 go build -ldflags "-H=windowsgui"
+
+# Support Window
+![image](https://github.com/conlan0/Trayicon/assets/87742085/c39de80c-af47-4666-bc9a-13066a28808f)
