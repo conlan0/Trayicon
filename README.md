@@ -13,3 +13,6 @@ What the program does:
 ![image](https://github.com/conlan0/Trayicon/assets/87742085/2580a003-baee-4107-a46b-7084cfc21ce7)
 
 I have also made small additions to the api and frontend of the rmm. This just includes an Added alert type of support in api/tacticalrmm/tacticalrmm/constants.py and a new style and alert type check to apply that style in src/components/modals/alerts/AlertsOverview.vue
+
+# Compile Command
+go build -ldflags "-H=windowsgui"
