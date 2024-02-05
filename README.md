@@ -32,4 +32,5 @@ Prerequisites:
 Steps
 
 1. Download and extract zip file and then navigate in a command propt to the files location
-2. Run the provided build command
+2. Change the apikey in alert.go to a valid apikey in your rmm
+3. Run the provided build command
