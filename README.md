@@ -22,3 +22,14 @@ go build -ldflags "-H=windowsgui"
 
 # Tray Icon image
 ![image](https://github.com/conlan0/Trayicon/assets/87742085/3a6c68fe-2c2e-4fdd-b409-18a98542890d)
+
+# Steps to Compile
+
+Prerequisites: 
+
+1. Have go downloaded and installed on your computer
+
+Steps
+
+1. Download and extract zip file and then navigate in a command propt to the files location
+2. Run the provided build command
