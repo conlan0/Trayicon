@@ -82,7 +82,7 @@ func SendAlert() {
 
 	// Prepare data
 	data := AlertData{
-		AlertType: "support",
+		AlertType: "custom",
 		Severity:  GetSeverity(),
 		Agent:     agentPK,
 		Message:   fmt.Sprintf("%s has requested assistance. Their issue: "+Problem, hostname),
